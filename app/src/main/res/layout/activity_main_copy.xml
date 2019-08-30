@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/transitions_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#222"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/cylinder_figure">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/acvUser"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/round_figure"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/acvUserIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_person_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/acvUser"
+            app:layout_constraintEnd_toEndOf="@+id/acvUser"
+            app:layout_constraintStart_toStartOf="@+id/acvUser"
+            app:layout_constraintTop_toTopOf="@+id/acvUser" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Usuario"
+            android:textColorHint="#828282"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/acvUserButon"
+            app:layout_constraintStart_toEndOf="@+id/acvUser"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tietUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="16"
+                android:text=""
+                android:textColor="#ffffff"
+                android:singleLine="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/acvUserButon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ic_next_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/cylinder_figure">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/acvEmail"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/round_figure"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/acvEmailIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_mail_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/acvEmail"
+            app:layout_constraintEnd_toEndOf="@+id/acvEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/acvEmail" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Email"
+            android:textColorHint="#828282"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/acvEmailButon"
+            app:layout_constraintStart_toEndOf="@+id/acvEmail"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tietEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="60dp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="16"
+                android:text=""
+                android:textColor="#ffffff"
+                android:singleLine="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/acvEmailButon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ic_next_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/cylinder_figure">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Password"
+            android:textColorHint="#828282"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/acvPasswordButon"
+            app:layout_constraintStart_toEndOf="@+id/acvPassword"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tietPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dp"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:text=""
+                android:textColor="#ffffff"
+                android:singleLine="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/acvPassword"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/round_figure"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/acvPasswordIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_lock_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/acvPassword"
+            app:layout_constraintEnd_toEndOf="@+id/acvPassword"
+            app:layout_constraintStart_toStartOf="@+id/acvPassword"
+            app:layout_constraintTop_toTopOf="@+id/acvPassword" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/acvPasswordButon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ic_next_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
